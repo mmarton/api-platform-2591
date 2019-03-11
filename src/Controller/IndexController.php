@@ -11,6 +11,7 @@ class IndexController
 {
     /**
      * @Route("/")
+     * @Route("/not-api", defaults={"_api_respond"=false})
      * @Template()
      */
     public function index()
